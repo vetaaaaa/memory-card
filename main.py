@@ -111,5 +111,41 @@ button_menu.clicked.connect(open_menu)
 button_next.clicked.connect(answer_button_click)
 new_question()
 
+window.setStyleSheet("""
+    QWidget {
+        background-color: #c8beb9;
+        font-size: 16px;
+    }
+    
+    QPushButton {
+        background-color: #a81817;
+        color: #f0f4f7;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: 1px solid grey;
+    }
+    
+    QPushButton:hover {
+        background-color: #781111;
+        color: #f0f4f7;
+    }
+    
+    QGroupBox {
+        background-color: #598251;
+        color: #f0f4f7;
+        border: 2px solid #f0f4f7; 
+        border-radius: 5px;
+        padding: 10px;
+    }
+    
+    QRadioButton {
+        background-color: #598251;
+        color: #f0f4f7;
+        font-size: 20px;
+    }
+    
+    
+""")
+
 window.show()
 app.exec_()
